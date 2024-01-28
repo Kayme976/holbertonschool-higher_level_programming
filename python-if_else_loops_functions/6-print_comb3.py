@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 k = 0
-while (k < 9):
-    a = 1 + k
-    while (a < 10):
-        if k == 8 and a == 9:
-            print("{}{}".format(k, a))
+while (i < 9):
+    a = 1 + i
+    while (j < 10):
+        if i == 8 and j == 9:
+            print("{}{}".format(i, j))
         else:
-            print("{}{},".format(k, a), end='')
-        a = a + 1
-    k = k + 1
+            print("{}{},".format(i, j), end='')
+        j = j + 1
+    i = i + 1
