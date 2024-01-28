@@ -6,6 +6,6 @@ while (k < 9):
         if k == 8 and a == 9:
             print("{}{}".format(k, a))
         else:
-            print("{}{}".format(k, a), end=',')
+            print("{}{},".format(k, a), end='')
         a = a + 1
     k = k + 1
