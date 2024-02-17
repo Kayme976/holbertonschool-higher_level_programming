@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""rectangle class.
-
-conatains a rectangle class
-"""
+"""rectangle class"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class rectangle(BaseGeometry):
     """a class rectangle that inherits form BaseGeometry"""
