@@ -1,7 +1,6 @@
 -- Import the database dump from hbtn_0d_tvshows same as 14-my_genres.sql
-SELECT tv_shows.title
-FROM tv_shows
-INNER JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
-INNER JOIN genres ON tv_show_genres.genre_id = genres.id
-WHERE genres.name = 'Comedy'
-ORDER BY tv_shows.title ASC;
+ SELECT s.title
+FROM (tv_genres g JOIN tv_show_genres sg ON g.id = sg.genre_id)
+JOIN tv_shows s ON sg.show_id = s.id
+WHERE g.name = "Comedy"
+ORDER BY s.title ASC;

@@ -1,5 +1,6 @@
 -- Import the database dump from hbtn_0d_tvshows
-SELECT tv_shows.title, tv_show_genres.genre_id
-FROM tv_shows, tv_show_genres
-WHERE tv_shows.id = tv_show_genres.show_id
-ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
+SELECT s.title, g.genre_id
+FROM tv_show s
+INNER JOIN tv_show_genres g
+ON s.id = g.show_id
+ORDER BY s.title ASC, g.genre_id ASC;
