@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+import statistics
 import hidden_4
 
 if __name__ == "__main__":
-    names = dir(hidden_4)
-    sorted_names = sorted(name for name in names if not name.startswith("__"))
-    for name in sorted_names:
-        print(name)
+    for name in dir(hidden_4):
+        if name[:2] != "__":
+            print(name)
