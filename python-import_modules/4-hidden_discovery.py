@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import variable_load_5
-    print("{}".format(variable_load_5.a))
+    import hidden_4
+    for i in dir(hidden_4):
+        if not i.startswith("__"):
+            print("{}".format(i))
