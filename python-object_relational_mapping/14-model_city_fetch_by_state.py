@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-That prints all City objects
+This script prints all City objects
 from the database `hbtn_0e_14_usa`.
 """
 
